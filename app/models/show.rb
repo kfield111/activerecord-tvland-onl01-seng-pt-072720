@@ -6,6 +6,7 @@ class Show < ActiveRecord::Base
   def actors_list
     self.actors.each do |temp|
       "#{temp.first_name} + #{temp.last_name}"
+    end
   end
 
 end
