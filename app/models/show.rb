@@ -8,6 +8,7 @@ class Show < ActiveRecord::Base
     self.actors.each do |temp|
       array << "#{temp.first_name} + #{temp.last_name}"
     end
+    array
   end
 
 end
